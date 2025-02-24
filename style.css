@@ -31,13 +31,14 @@ margin: 14px 0;
 }
 
 .slider{
-    -webkit-oppearance: none;
+    appearance: none;
     width: 100%;
     border-radius: 5px;
     background: #dfdfdf;
     height: 18px;
     outline: none;
     margin-top: 8px;
+    opacity: 0,7;
 }
 
 .button-cta{
@@ -45,7 +46,7 @@ margin: 14px 0;
     background-color: #3E872B;
     border: 0;
     border-radius: 4px;
-    cursor:pointer;
+    cursor: pointer;
     margin-top: 40px;
     color:FFF;
     font-weight: bold;
@@ -64,26 +65,31 @@ margin: 14px 0;
 .title{
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 28px;
     margin-top: 24px;
     margin-bottom: 8px;
 }
 
 .password{
     height: 60px;
-    background-color: rgb(0,0,0,0.40);
+    background-color: rgba(0,0,0,0.40);
+    border: 1px solid #313131;
+
     border-radius:4px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #FFF;
-    border: 1px solid #313131;
     transition:transform 0.5s;
 }
 
 .password:hover{
-    color :#FFF;
+    border-color :#FFF;
     transform: scale (1.05);
+}
+
+.hide{
+    display: none;
 }
 
 .tooltip{
@@ -98,6 +104,10 @@ margin: 14px 0;
     visibility: hidden;
     opacity: 0;
     transition: all 0,5 ease-in-out;
+}
+
+.hide{
+    display: none;
 }
 
 .container-password:hover .tooltip{
